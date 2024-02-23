@@ -1,0 +1,513 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body, header, nav, main, footer, h1, div, img { /*css reset*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+} 
+body {
+  background-color: #393939;
+}
+
+/*logo style*/
+.logo { 
+  float: left;
+  font-size: 92px;
+  font-family: 'Pacifico', cursive;
+  color: #ff5a09;
+  margin-top: 0%;
+  margin-left: 5%;
+  text-shadow: 5px 5px  #fff;
+  border: 5px solid #f3843e;;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+} 
+
+/*navigation bar style*/
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5%;
+}
+.header a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ffff;
+  margin-left: 90px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.header span {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ffff;
+  margin-left: 90px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.header a:hover {
+  color: #fe9d46;
+}
+
+/*dropdown menu style*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9eac82;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+  color: #ebf9ee;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*name conatainer style*/
+.name-container {
+  margin-top: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-container .about-me {
+  width: 100%;
+}
+.name {
+  padding: 20px;
+}
+.name button {
+  background-color: #ff5a09;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+}
+.name form {
+  text-decoration: none;
+}
+.name h1, h3, button {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  
+}
+.name h1 {
+  font-size: 70px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.name h3 {
+  font-size: 40px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* about me and picture style*/
+.about-me {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.about-me img {
+  width: 50%;
+  height: auto;
+}
+.about {
+  background-color: #4d4c4c;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.about h2 {
+  font-size: 40px;
+  color: #ff9900;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about p {
+  line-height: 2;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.about button{
+  background-color: #ff5a09;
+  color: #ffeacb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 70px;
+}
+.about form {
+  text-decoration: none;
+}
+
+
+/*skills style*/
+.skill-container {
+  height: 500px;
+  position: relative;
+  margin-top: 200px;
+}
+.skill-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #ff9900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.skill-container span + span {
+    margin-left: 60px;
+}
+.skill {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+ }
+
+ .skill span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: #f9f9f4;
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ .skill span img {
+    display: block;
+    width: 100px;
+    height: auto;
+ }
+
+ .skill span::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+ }
+
+
+/*projects style*/
+.project-container {
+  margin-top: 200px;
+  padding: 30px;
+}
+.project-container h1 {
+  text-align: center;
+  color: #ff9900;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.project-container p {
+  margin-left: 50px;
+  font-size: 25px;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.project {
+  background-color: #4d4c4c;
+  width: 50%;
+  text-align: center;
+   border: 3px solid #f3f0ec;
+}
+.projects {
+  display: flex;
+  gap: 50px;
+}
+.project h3 {
+  color: #f3f0ec;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.projects .project button {
+  background-color: #ff5a09;
+  color: #ffeacb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 70px;
+}
+.projects .project form {
+  text-decoration: none;
+}
+.projects .project form:hover {
+    text-decoration: none; 
+}
+
+/*hobbies style*/
+.hobbies-container {
+  margin-top: 200px;
+  padding: 30px;
+}
+.hobbies {
+  display: flex;
+  gap: 50px;
+}
+.hobbies-container h1 {
+  text-align: center;
+  color: #ff9900;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.hobby {
+  background-color: #4d4c4c;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+}
+.hobby h2 {
+  color: #f3f0ec;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.hobby button {
+  background-color: #ff5a09;
+  color: #ffeacb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 70px;
+}
+.hobbies .hobby form {
+  text-decoration: none;
+}
+.hobbies .hobby form:hover {
+    text-decoration: none; 
+}
+
+/*thank you text style*/
+.text {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+.text p {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*contact style*/
+.contact-container {
+  text-align: center;
+  display: grid;
+}
+.contact h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #ff9900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.contact a, .contact p, .contact form {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contact-container span + span {
+    margin-left: 50px;
+}
+
+
+/*footer style*/
+footer {
+  margin-top: 100px;  
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+.social-icons {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+.copyr {
+   background-color: #6e6e6e;
+}
+.copyr p {
+  text-align: center;
+  color: #fff;
+}
+
+
+/* Add responsive styles */
+
+/* For smaller screens*/
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 64px;
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 16px;
+    margin-top: 3%;
+    display: block;
+  }
+  .header a, .header span {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .about {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .about-me img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill-container {
+    margin-top: 100px;
+    
+  }
+  .skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    margin-top: 500px;
+    padding: 20px;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hobbies-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .hobbies {
+    flex-direction: column;
+  }
+  .hobby {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin-top: 50px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 50px;
+  }
+}

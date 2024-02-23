@@ -1,0 +1,159 @@
+body, header, nav, main, footer, h1, div, img { /*css reset*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(images/coldriver.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*navigation bar style*/
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #3787a9;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5%;
+}
+.header a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ffff;
+  margin-left: 90px;
+}
+.header span {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ffff;
+  margin-left: 90px;
+}
+.header a:hover {
+  color: #fe9d46;
+}
+
+/*dropdown menu style*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9eac82;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+  color: #ebf9ee;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*contact form style*/
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+.con-form {
+   margin-top: 50px
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  font-size: 18px;
+  margin-left: 40%;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/*footer style*/
+footer {
+  margin-top: 100px;  
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+.social-icons {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+.copyr {
+   background-color: #6e6e6e;
+}
+.copyr p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+/********** Media Queries **********/
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 16px;
+    margin-top: 3%;
+    display: block;
+  }
+  .header a, .header span {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+.contact-container {
+  margin-top: 50px;
+  padding: 20px;
+}
+}
